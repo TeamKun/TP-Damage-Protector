@@ -14,10 +14,13 @@ class TPCommand (var protector: Protector): CommandExecutor {
             if(sender.isOp){
                 if(args.size==1){
                     return run(sender,Bukkit.selectEntities(sender,args[0]))
-                }
+                }else if(args.size==2){
+                    if(Bukkit.selectEntities(sender,args[0]).isNotEmpty()){
+                        return run(Bukkit.selectEntities(sender,args[0])[0] as Player,Bukkit.selectEntities(sender,args[1]))
+                    }else return false
+                }else return false
             }
         }
-        // Maybe Throw To Legacy TP Command
         return false
     }
 
