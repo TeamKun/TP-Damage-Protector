@@ -6,7 +6,7 @@ authors: [ Bun133 ]
 description: This Plugin protect players from TP Damage
 website: https://twitter.com/bun133_
 commands:
-  tp:
+  t:
     usage: /<command> <Entitys>
     permission: op
     permission-message: You don't have enough perm!

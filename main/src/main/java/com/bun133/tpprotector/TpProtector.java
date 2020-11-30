@@ -12,6 +12,8 @@ public final class TpProtector extends JavaPlugin {
         this.protector = new Protector();
         this.getServer().getPluginManager().registerEvents(protector,this);
         this.command = new TPCommand(protector);
+        this.getCommand("t").setExecutor(command);
+        this.getServer().getScheduler().runTaskTimer(this,protector,1,1);
     }
 
     @Override
