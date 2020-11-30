@@ -1,0 +1,13 @@
+name: Tpprotector
+version: @version@
+main: com.bun133.tpprotector.TpProtector
+api-version: 1.15
+authors: [ Bun133 ]
+description: This Plugin protect players from TP Damage
+website: https://twitter.com/bun133_
+commands:
+  tp:
+    usage: /<command> <Entitys>
+    permission: op
+    permission-message: You don't have enough perm!
+    description: TP Entitys to You with being protected by TP-Protector
