@@ -1,8 +1,7 @@
-name: Tpprotector
+name: TpProtector
 version: @version@
 main: com.bun133.tpprotector.TpProtector
 api-version: 1.15
 authors: [ Bun133 ]
 description: This Plugin protect players from TP Damage
 website: https://twitter.com/bun133_
-commands:
